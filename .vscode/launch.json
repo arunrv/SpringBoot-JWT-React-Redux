@@ -8,7 +8,7 @@
             "type": "java",
             "name": "Debug (Launch)-PmsApplication<pms>",
             "request": "launch",
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/server",
             "console": "internalConsole",
             "stopOnEntry": false,
             "mainClass": "com.qp.pms.PmsApplication",
@@ -20,7 +20,7 @@
             "name": "Debug (Attach)",
             "request": "attach",
             "hostName": "localhost",
-            "port": 0
+            "port": 3001
         }
     ]
 }
