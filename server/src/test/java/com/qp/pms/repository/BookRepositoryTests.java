@@ -32,7 +32,7 @@ public class BookRepositoryTests {
     public void getBooks() {
         List<Book> books = bookRepository.findAll();
 
-        assertFalse(books.size() != 2);
+        assertFalse(books.size() != 3);
     }
     
     @Test

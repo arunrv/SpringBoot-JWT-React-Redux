@@ -40,13 +40,16 @@ public class BookResourceTests {
 		result
             .andExpect(status().isOk())
             .andExpect(content().contentType(mediaType))
-            .andExpect(jsonPath("$", hasSize(2)))
+            .andExpect(jsonPath("$", hasSize(3)))
             .andExpect(jsonPath("$[0].id", is(1)))
             .andExpect(jsonPath("$[0].name", is("Mastering Spring Boot")))
             .andExpect(jsonPath("$[0].author", is("John Doe")))
             .andExpect(jsonPath("$[1].id", is(2)))
             .andExpect(jsonPath("$[1].name", is("Mastering React")))
-            .andExpect(jsonPath("$[1].author", is("Jane Doe")));
+            .andExpect(jsonPath("$[1].author", is("Jane Doe")))
+            .andExpect(jsonPath("$[2].id", is(3)))
+            .andExpect(jsonPath("$[2].name", is("Mastering Angular")))
+            .andExpect(jsonPath("$[2].author", is("Jack Doe")));
     }
 
     @Test
