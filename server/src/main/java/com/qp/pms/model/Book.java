@@ -4,19 +4,26 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
+//import javax.persistence.Table;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "book")
+// If table name matches with class name then we don't need @Table annotation
+//@Table(name = "book")
 @Data 
-@NoArgsConstructor
+@NoArgsConstructor  // Entity must have a no argument constructor
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @ApiModelProperty(hidden=true)
     private Long id;
+
+    @ApiModelProperty(notes = "Name of the Book", required = true, allowEmptyValue=false)
     private String name;
+
+    @ApiModelProperty(notes = "Author of the book", required = true, allowEmptyValue=false)
     private String author;
 }

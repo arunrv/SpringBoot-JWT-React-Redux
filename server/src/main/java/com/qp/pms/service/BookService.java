@@ -1,6 +1,7 @@
 package com.qp.pms.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.qp.pms.model.Book;
 import com.qp.pms.repository.BookRepository;
@@ -16,4 +17,8 @@ public class BookService {
     public List<Book> getAllBooks() {
         return bookRespository.findAll();
     }
+
+	public Optional<Book> getBook(Long id) {
+		return bookRespository.findById(id);
+	}
 }
