@@ -10,4 +10,6 @@ import com.qp.pms.model.Book;
 @Repository
 @Transactional
 public interface BookRepository extends JpaRepository<Book, Long> {
+
+	Object findByName(String name);
 }

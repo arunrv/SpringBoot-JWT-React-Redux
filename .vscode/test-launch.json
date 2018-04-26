@@ -1,0 +1,22 @@
+{
+    "run": [
+        {
+            "name": "pms",
+            "projectName": "pms",
+            "workingDirectory": "d:\\Misc\\ReactJSLearning\\SpringBoot-JWT-React-Redux",
+            "args": [],
+            "vmargs": [],
+            "preLaunchTask": ""
+        }
+    ],
+    "debug": [
+        {
+            "name": "pms",
+            "projectName": "pms",
+            "workingDirectory": "d:\\Misc\\ReactJSLearning\\SpringBoot-JWT-React-Redux",
+            "args": [],
+            "vmargs": [],
+            "preLaunchTask": ""
+        }
+    ]
+}
