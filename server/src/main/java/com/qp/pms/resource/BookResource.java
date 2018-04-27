@@ -22,7 +22,7 @@ import io.swagger.annotations.ApiResponses;
 
 @RestController
 @RequestMapping("/api/book")
-@Api(value = "Book Resource REST Endpoint", description = "Shows the book info")
+@Api(tags = "Book APIs", value = "Book Resource REST Endpoint", description = "Repository for Book entities")
 public class BookResource {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());

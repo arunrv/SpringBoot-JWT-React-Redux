@@ -39,7 +39,6 @@ public class BookRepositoryTests {
     public void getBook() {
         Optional<Book> book = bookRepository.findById(new Long(1));
 
-        assertNotNull(book);
         assertNotNull(book.get());
         assertEquals(book.get().getName(), "Mastering Spring Boot");
         assertEquals(book.get().getAuthor(), "John Doe");

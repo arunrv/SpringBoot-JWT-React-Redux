@@ -24,6 +24,29 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- Mobile -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mobile</artifactId>
+			<version>2.0.0.M3</version>
+        </dependency>
+
+        <!-- Spring Security and JWT -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.0</version>
+        </dependency>
+
         <!-- Database -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -45,6 +68,12 @@
             <version>1.16.8</version>
             <scope>provided</scope>
         </dependency>
+
+        <!-- Misc -->
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+		</dependency>
 
         <!-- actuator: for monitoring: http://localhost:8080/actuator -->
         <dependency>
@@ -78,6 +107,17 @@
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
     </dependencies>
+    
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/libs-milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
     <properties>
         <java.version>1.8</java.version>
